@@ -1,0 +1,79 @@
+
+#service {
+  width: 80%;
+  margin: auto;
+  height: 1500px;
+  padding: 40px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.service-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.single-service {
+  flex-basis: 40%;
+  text-align: left;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  color: rgb(8, 8, 8);
+  position: relative;
+  
+}
+.boxed {
+  border: 2px solid rgb(14, 13, 13) ;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.text{
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.7;
+}
+.single-service img {
+  width: 100%;
+  border-radius: 15px;
+}
+.title-text {
+  text-align:center;
+  font-size: 50px;
+  font-weight: bolder;
+  padding-bottom: 15px;
+  color: #080808;
+}
+.service-desc h1{
+  font-size: 30px;
+}
+.service-desc p {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+  text-align: center;
+}
+.text1{
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.text2{
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.single-service:hover .service-desc {
+  bottom: 40%;
+  opacity: 1;
+}
+@media screen and (max-width: 770px) {
+  .single-service {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  hr {
+    margin: 5px auto;
+  }
+  .single-service:hover .service-desc {
+    bottom: 25%;
+  }
+}

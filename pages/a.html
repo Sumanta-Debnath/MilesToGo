@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Stations | Miles To Go!</title>
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="../assets/css/responsive.css" rel="stylesheet">
+    <link href="button1.css" rel="stylesheet">
+    <link href="hillstation.css" rel="stylesheet">
+
+</head>
+<body>
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+  
+                <div class="navbar-header">
+                   
+                    <a class="site-title" style="position: relative; right: 150px; bottom: 25px;"><span>Miles To Go!</span></a>
+  
+                </div><!-- /.navbar-header -->
+  
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+  
+                    <ul class="nav navbar-nav navbar-right" style="position: relative; left: 100px; bottom: 25px;">
+  
+                        <li><a href="../index.html">Home</a></li>                       
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+  
+                    </ul>
+  
+                </div>
+  
+            </div>   
+        </nav>
+      </header>
+
+      <!--Slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../assets/images/sikkim.jpg" style="width:100%">
+          <div class="text">Hill Stations</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../assets/images/zigzag.jpg" style="width:100%">
+          <div class="text">Hill Stations</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../assets/images/train.jpg" style="width:100%">
+          <div class="text">Hill Stations</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../assets/images/comp.webp" style="width:100%">
+          <div class="text">Hill Stations</div>
+        </div>
+    
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+
+          <video id="background-video" autoplay loop muted>
+            <source src="u.mp4" type="video/mp4">
+          </video>
+
+          <style>
+            /* video background */
+                #background-video {
+                  height: 90vh;
+                  width: 100vw;
+                  object-fit: cover;
+                  position: relative;
+                  right: 50px;
+                  top: 50px;
+                  z-index: -1;
+                }
+
+                @media (max-width: 750px) {
+                    #background-video { display: none; }
+                    body {
+                      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+                      background-size: cover;
+                    }
+                }
+          </style>
+
+          <div class="box">
+            <div class="row">
+              <div class="card-a">
+                <div class="card-1">
+                  <h3>Manali</h3>
+                </div>
+                <div class="button"><a href="register3.html"><input type="button" value="Tour Plan"></a></div>
+              </div> 
+
+              <div class="card-b">
+                <div class="card-2">
+                  <h3>Shimla</h3>
+                </div>
+                <div class="button"><a href="register3.html"><input type="button" value="Tour Plan"></a></div>
+              </div>
+              
+              <div class="card-c">
+                <div class="card-3">
+                  <h3>Dalhousie</h3>
+                  
+                </div>
+                <div class="button"><a href="register3.html"><input type="button" value="Tour Plan"></a></div>
+              </div>
+              <div class="card-d">
+                <div class="card-4">
+                  <h3>Ooty</h3>
+            
+                </div>
+                <div class="button"><a href="register3.html"><input type="button" value="Tour Plan"></a></div>
+              </div>
+              <div class="card-e">
+                <div class="card-5">
+                  <h3>Shillong</h3>
+                  
+                </div>
+                <div class="button"><a href="register3.html"><input type="button" value="Tour Plan"></a></div>
+              </div>
+              <div class="card-f">
+                <div class="card-6">
+                  <h3>Darjeeling</h3>
+                  
+                </div>
+                <div class="button"><a href="register3.html"><input type="button" value="Tour Plan"></a></div>
+              </div>
+            </div>
+          </div>
+            
+          <script>
+            function openForm() {
+              document.getElementById("popupForm").style.display = "block";
+            }
+            function closeForm() {
+              document.getElementById("popupForm").style.display = "none";
+            }
+          </script>
+
+
+     
+
+     <!--Footer-->
+  <div class="footer-basic">
+    <footer>
+        <div class="social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="../index.html">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="aboutus.css">About</a></li>
+            <li class="list-inline-item"><a href="contactus.html">Contact</a></li>
+            <li class="list-inline-item"><a href="#">FAQs</a></li>
+        </ul>
+        <p class="copyright">Miles To Go! <i class="fa fa-copyright"></i> 2022</p>
+    </footer>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

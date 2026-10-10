@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>About Us | Miles To Go!</title>
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/about99.css" rel="stylesheet" />
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+
+    <!--Favicon-->
+  </head>
+  <body>
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <h2><a href="homepage.html" style="color: inherit; text-decoration: none"><b>Miles To Go!</b></a></h2>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="../php/contactus.php">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- /.site-navigation -->
+    </header>
+    <!-- /#mastheaed -->
+
+    <div id="hero" class="hero overlay">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Who Are We?</h1>
+          <p>
+            Miles To Go! is a online tourist guide website provides its users to
+            either view the tour plan of the place which is selected by the them
+            or to book tour packages of the recommended places which the user
+            will select. The tour plan includes the way the users can easily
+            travel to their preferred destinations like Hill Stations, Beaches,
+            Pilgrimages, Wildlife Tours etc. with convenience.<span id="dots"
+              >....</span
+            ><span id="more" style="display: none">
+              It also includes different means of transportation like Air, Rail,
+              Road and Sea. It also provides the estimated cost of the above
+              mentioned modes of transport. The user can also use the map by
+              which he/she can view the places and its surroundings along with
+              its details, images and address .One of the most fascinating
+              feature of Miles To Go! is that the user can not only view the
+              tour plan but also able to book the tour packages in Miles To Go!.
+              We have organized various tour packages for the places the user
+              wants to visit. The tour packages will include the hotel
+              accomodations, food and other transport facilities for the user.
+              The tour packages mainly includes the travel schedules which
+              involves the sightseeing of the places which is recommended by the
+              user.</span
+            >
+          </p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+          <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read More";
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read Less";
+                moreText.style.display = "inline";
+              }
+            }
+          </script>
+        </div>
+        <!-- /.hero-text -->
+      </div>
+      <!-- /.hero-content -->
+    </div>
+    <!-- /.hero -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../assets/js/jquery.countTo.min.js"></script>
+    <script src="../assets/js/jquery.shuffle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

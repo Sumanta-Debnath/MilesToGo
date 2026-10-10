@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+/* Destination detail pages (radhanagar, manali, amritsar ...).
+   Load AFTER category.css, which provides the base reset, header, .btn-plan,
+   .buttonback and footer styles. */
+
+/* ---------- Hero: video background + intro text ---------- */
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: clamp(460px, 75vh, 780px);
+  padding: clamp(110px, 12vw, 150px) 0 clamp(40px, 6vw, 80px);
+  overflow: hidden;
+  color: #fff;
+  background: #0b1b2b;
+}
+.hero #background-video {
+  z-index: -2;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.35) 40%,
+    rgba(0, 0, 0, 0.6)
+  );
+}
+.head-text {
+  width: 92%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Baumans", cursive;
+  color: #fcfbfb;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+.head-text h1 {
+  margin: 0;
+  font-family: inherit;
+  font-size: clamp(40px, 8vw, 80px);
+  line-height: 1.1;
+  color: inherit;
+}
+.head-text h4 {
+  margin: 10px 0 0;
+  font-family: inherit;
+  font-size: clamp(22px, 4vw, 40px);
+  color: #fefefd;
+}
+.head-text p {
+  max-width: 900px;
+  margin: 18px 0 0;
+  font-size: clamp(15px, 2.1vw, 26px);
+  line-height: 1.5;
+  color: #fefefd;
+}
+
+@media (max-width: 750px) {
+  .hero {
+    background: url("https://assets.codepen.io/6093409/river.jpg") center /
+      cover no-repeat;
+  }
+}
+
+/* ---------- Tour plan card ---------- */
+.plan-section {
+  padding: clamp(40px, 6vw, 80px) 15px;
+  background: linear-gradient(135deg, #eaf4fb, #f1e8f7);
+}
+.plan-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 40px);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+.plan-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  font-size: clamp(34px, 5vw, 45px);
+  font-weight: 500;
+}
+.plan-title::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 4px;
+  margin: 8px auto 0;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.plan-label {
+  margin: 26px 0 12px;
+  text-align: center;
+  font-family: "Baumans", cursive;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 500;
+}
+.plan-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  padding: 12px 0;
+}
+.plan-row .city {
+  flex: 1 1 180px;
+  min-width: 0;
+  padding: 10px 15px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  border-radius: 15px;
+}
+.plan-row .btn-plan {
+  flex: 0 0 auto;
+  text-align: center;
+}
+.plan-row .soon {
+  flex: 0 0 auto;
+  min-width: 130px;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}
+
+@media (max-width: 480px) {
+  .plan-row .btn-plan,
+  .plan-row .soon {
+    flex: 1 1 100%;
+  }
+}

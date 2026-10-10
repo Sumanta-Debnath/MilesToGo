@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+/* Shared by the category listing pages (hillstation, beaches, jungle, pilgrimage) */
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Verdana, sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* ---------- Header ---------- */
+#masthead .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+#masthead .container::before,
+#masthead .container::after {
+  display: none;
+}
+#masthead .navbar-header {
+  float: none;
+  margin: 0;
+}
+#masthead .navbar-header h2 {
+  margin: 0;
+  font-family: "Macondo", cursive;
+  font-size: clamp(26px, 4vw, 40px);
+  color: #fff;
+}
+#masthead .navbar-collapse {
+  padding: 0;
+  width: auto;
+}
+#masthead .navbar-nav {
+  margin: 0;
+  float: none;
+}
+
+/* ---------- Slideshow ---------- */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.mySlides {
+  display: none;
+  position: relative;
+}
+.mySlides img {
+  width: 100%;
+  height: clamp(320px, 56vw, 720px);
+  object-fit: cover;
+}
+.numbertext {
+  position: absolute;
+  top: 0;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #f2f2f2;
+}
+.slideshow-container .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  text-align: center;
+  color: #f2f2f2;
+  font-family: "Baumans", cursive;
+  font-size: clamp(36px, 8vw, 100px);
+  line-height: 1.1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+.dots {
+  text-align: center;
+  padding: 14px 0;
+}
+.dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+.dot.active {
+  background-color: #717171;
+}
+
+/* ---------- Destination cards over a video background ---------- */
+#service {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: clamp(40px, 6vw, 80px) 0;
+  background: #0b1b2b;
+}
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.service-box {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 40px);
+  width: 92%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.single-service {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  text-align: center;
+}
+.single-service > img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.text-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.text-block h4 {
+  margin: 0;
+  color: #feffff;
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1;
+}
+.text-block h5 {
+  margin: 0;
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(18px, 2.2vw, 26px);
+  line-height: 1.1;
+}
+/* ---------- Buttons ----------
+   Primary: solid teal. Secondary (.btn-ghost, Back): outlined. */
+.btn-plan,
+.btn-book,
+.buttonback a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 130px;
+  min-height: 44px;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #04211f;
+  text-decoration: none;
+  background: #14b8a6;
+  border: 1px solid #14b8a6;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+.btn-plan:hover,
+.btn-plan:focus,
+.btn-book:hover,
+.btn-book:focus {
+  color: #04211f;
+  text-decoration: none;
+  background: #2dd4bf;
+  border-color: #2dd4bf;
+  box-shadow: 0 6px 16px rgba(20, 184, 166, 0.35);
+  transform: translateY(-1px);
+}
+.btn-plan:active,
+.btn-book:active {
+  background: #0d9488;
+  border-color: #0d9488;
+  box-shadow: none;
+  transform: translateY(0);
+}
+.btn-plan:focus-visible,
+.btn-book:focus-visible,
+.buttonback a:focus-visible {
+  outline: 3px solid rgba(20, 184, 166, 0.55);
+  outline-offset: 2px;
+}
+
+/* Secondary: outlined, for Back / Cancel on light backgrounds */
+.btn-plan.btn-ghost,
+.buttonback a {
+  color: #1f2937;
+  background: transparent;
+  border-color: #1f2937;
+  box-shadow: none;
+}
+.btn-plan.btn-ghost:hover,
+.btn-plan.btn-ghost:focus,
+.buttonback a:hover,
+.buttonback a:focus {
+  color: #fff;
+  text-decoration: none;
+  background: #1f2937;
+  border-color: #1f2937;
+  box-shadow: 0 6px 16px rgba(31, 41, 55, 0.25);
+  transform: translateY(-1px);
+}
+.btn-plan.btn-ghost:active,
+.buttonback a:active {
+  background: #111827;
+  border-color: #111827;
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .service-box {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 480px;
+  }
+}
+@media (max-width: 750px) {
+  #service {
+    background: url("https://assets.codepen.io/6093409/river.jpg") center /
+      cover no-repeat;
+  }
+}
+
+/* ---------- Back button ---------- */
+.buttonback {
+  padding: 35px 15px;
+  text-align: center;
+}
+
+/* ---------- Footer ---------- */
+.footer-basic {
+  width: 100%;
+  padding: 50px 15px;
+  background-color: #000;
+  color: #f7f8f9;
+}
+.footer-basic ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.footer-basic li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.footer-basic .social > a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #f9f5f5;
+  background-color: #090909;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+.footer-basic .copyright {
+  margin: 15px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: #fbf6f6;
+}
+
+/* ---------- Mobile menu (slicknav) on the dark hero ---------- */
+@media only screen and (max-width: 767px) {
+  #masthead .site-navigation {
+    left: 0;
+    width: 100%;
+  }
+  #masthead .slicknav_icon-bar {
+    background-color: #fff;
+  }
+  #masthead .act .slicknav_icon-bar {
+    background-color: #26272d;
+  }
+}
+@media (max-width: 480px) {
+  .footer-basic ul {
+    font-size: 16px;
+  }
+}

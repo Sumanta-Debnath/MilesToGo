@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Miles To Go!</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/style1.css" rel="stylesheet" />
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../assets/css/homepage1.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link href="../assets/css/slider.css" rel="stylesheet" />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <h2>
+              <a
+                href="homepage.html"
+                style="color: inherit; text-decoration: none"
+                ><b>Miles To Go!</b></a
+              >
+            </h2>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="../php/contactus.php">Contact Us</a></li>
+              <li><a href="../php/adminlogin.php">Admin</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Slideshow-->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img
+          src="../assets/images/pexels-s-migaj-746386.jpg"
+          alt="Hill stations"
+        />
+        <div class="text">
+          Picturesque Hill Stations<br />
+          <p>"Hike more. Worry less."</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="../assets/images/homebeach.jpg" alt="Beach vacations" />
+        <div class="text">
+          Fascinating Beach Vacations<br />
+          <p>"Its time to make some barefoot memories."</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img
+          src="../assets/images/pexels-navneet-shanu-672630.jpg"
+          alt="Pilgrimage sites"
+        />
+        <div class="text">
+          Spiritual Pilgrimage Sites<br />
+          <p>
+            "We are invited to make a pilgrimage, into the heart and life of
+            God."
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="../assets/images/liger.jpg" alt="Wildlife" />
+        <div class="text">
+          Unexplored Wildlife<br />
+          <p>"Go wild, for a while."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    </script>
+
+    <!--Section Box-->
+    <section id="service">
+      <video id="background-video" autoplay loop muted playsinline>
+        <source src="../assets/videos/india.mp4" type="video/mp4" />
+      </video>
+      <script>
+        // Skip downloading the background video on small screens (it is hidden there)
+        if (window.matchMedia("(max-width: 750px)").matches) {
+          document.getElementById("background-video").remove();
+        }
+      </script>
+      <h2 class="title-text">Choose Your Holiday Theme!</h2>
+      <div class="service-box">
+        <div class="single-service">
+          <img src="../assets/images/hill.jpg" alt="Hill Stations" />
+          <div class="text-block">
+            <h4>Hill Stations</h4>
+            <p><b>Breathtaking Mountain Ranges</b></p>
+          </div>
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3><b>HILL STATIONS</b></h3>
+            <hr />
+            <p>
+              The hill stations of India welcome you with refreshing vacations
+              for your friends and family. All these hill stations present a
+              pleasurable experience that you will remember for the rest of your
+              life.
+            </p>
+            <a class="btn-know" href="hillstation.html">Know More</a>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="../assets/images/beach.jpg" alt="Beaches" />
+          <div class="text-block">
+            <h4>Beaches</h4>
+            <p><b>Never Ending Shoreline</b></p>
+          </div>
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3><b>BEACHES</b></h3>
+            <hr />
+            <p>
+              From the undulating golden beaches that make for an ideal vantage
+              point to watch the sun dipping into the sea, beaches stroke both
+              the eastern and western coasts of the Indian peninsula.
+            </p>
+            <a class="btn-know" href="beaches.html">Know More</a>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="../assets/images/wild.jpg" alt="Jungle Safari" />
+          <div class="text-block">
+            <h4>Jungle Safari</h4>
+            <p><b>Explore in the Wilderness</b></p>
+          </div>
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3><b>JUNGLE SAFARI</b></h3>
+            <hr />
+            <p>
+              Plan a wildlife vacation with us where you can take an jeep
+              safari, and even trek accompanied by an expert driver & guide who
+              take you to the best viewing zones in the parks to sight a variety
+              of wildlife species.
+            </p>
+            <a class="btn-know" href="jungle.html">Know More</a>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="../assets/images/pilgrim.jpg" alt="Pilgrimages" />
+          <div class="text-block">
+            <h4>Pilgramages</h4>
+            <p><b>Celebration of Diverse Beliefs</b></p>
+          </div>
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3><b>PILGRIMAGES</b></h3>
+            <hr />
+            <p>
+              Steeped in spirituality, India is the perfect place to perform
+              pilgrimage not only in Hindu temples but in the architecturally
+              brilliant shrines, churches, mosques & dargahs, gurudwaras and
+              monasteries.
+            </p>
+            <a class="btn-know" href="pilgrimage.html">Know More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Layout-->
+    <div class="tagline">
+      <p>Enhance your travelling plan with</p>
+      <h1><b>Miles To Go!</b></h1>
+    </div>
+
+    <!-- Feature sections -->
+    <div class="feature feature--mint">
+      <div class="feature-text">
+        <h1 class="xlarge-font">
+          <b
+            >Experience the breathtaking tour plans in the midst of the
+            incredible mountain ranges.</b
+          >
+        </h1>
+        <h1 class="large-font green">
+          <b>Explore the beauties of the Hill Stations in India.</b>
+        </h1>
+        <p>
+          Your holiday trip will definitely be a colorful itinerary with so much
+          to scout and so much to experience. The biological enormity of this
+          mystical nation with a huge diversity makes it a great place to pay a
+          visit at any time of the year. And once you have chosen a hill
+          station, there might be the possibility that you would wish to explore
+          the other beautiful hill stations of India.
+        </p>
+        <a class="button" href="hillstation.html">View More</a>
+      </div>
+      <div class="feature-img">
+        <img src="../assets/images/manali.webp" alt="Manali" />
+      </div>
+    </div>
+
+    <div class="feature feature--pink">
+      <div class="feature-img">
+        <img src="../assets/images/tiger.jpg" alt="Tiger" />
+      </div>
+      <div class="feature-text">
+        <h1 class="xlarge-font">
+          <b
+            >Witness the vibrant and wondrous faunas in the famous National
+            Parks and Wildlife Sanctuaries.</b
+          >
+        </h1>
+        <h1 class="large-font red">
+          <b>Spot the various species of the Animal Kingdom in India.</b>
+        </h1>
+        <p>
+          The land of India is bestowed with bountiful natural beauty that
+          shelters diverse wildlife. From lush forests and salt deserts to
+          rugged mountains and vast marine stretches, India's wildlife
+          sanctuaries are home to unique species of flora and fauna.
+        </p>
+        <a class="button button--red" href="jungle.html">View More</a>
+      </div>
+    </div>
+
+    <div class="feature feature--cyan">
+      <div class="feature-text">
+        <h1 class="xlarge-font">
+          <b
+            >Spend some gratifying moments in the opulant shorelines in
+            India.</b
+          >
+        </h1>
+        <h1 class="large-font green">
+          <b>Walk by the sandy shores with your loved ones.</b>
+        </h1>
+        <p>
+          Explore and experience the solitude that comes with deserted
+          sea-shores and calm waters. India has become a top destination for
+          beach lovers- thanks to its exotic shoreline, high-spirited shopping
+          lanes, and beach-shacksresorts! It sure is the best bet to visit the
+          best tropical beaches.
+        </p>
+        <a class="button" href="beaches.html">View More</a>
+      </div>
+      <div class="feature-img">
+        <img src="../assets/images/beach1.jpg" alt="Beach" />
+      </div>
+    </div>
+
+    <div class="feature feature--pink">
+      <div class="feature-img">
+        <img
+          src="../assets/images/meenakshi-temple-madurai.jpg"
+          alt="Meenakshi Temple, Madurai"
+        />
+      </div>
+      <div class="feature-text">
+        <h1 class="xlarge-font">
+          <b
+            >Be a part of experiencing the various Spiritual Destinations in
+            India.</b
+          >
+        </h1>
+        <h1 class="large-font red"><b>Open the Door to Divinity.</b></h1>
+        <p>
+          From opulent temples and mosques to marvellous churches, resplendent
+          gurudwaras and serene monasteries, India is the home of holiness.
+        </p>
+        <a class="button button--red" href="pilgrimage.html">View More</a>
+      </div>
+    </div>
+
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="tm-head">
+          <h2 class="pt" id="testimonials-title">Why Choose Us?</h2>
+          <p class="tm-sub">
+            Real stories from travellers who explored with Miles To Go!
+          </p>
+        </header>
+
+        <div
+          class="tm-carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Traveller testimonials"
+          tabindex="0"
+        >
+          <div class="tm-viewport">
+            <div class="tm-track">
+              <article class="tm-card" data-trip="Pilgrimage &amp; Beaches">
+                <i class="fa fa-quote-left tm-quote" aria-hidden="true"></i>
+                <div class="tm-stars" role="img" aria-label="5 out of 5 stars">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i>
+                </div>
+                <blockquote class="tm-text">
+                  We chose to explore the fascinating sights of Goa, Karnataka,
+                  Mumbai and Bodh Gaya besides enjoying the majestic views of
+                  the Ganga Aarti at the Ghat of Varanasi. We loved the services
+                  and hospitality.
+                </blockquote>
+                <footer class="tm-author">
+                  <img
+                    class="tm-avatar"
+                    src="../assets/images/testimonials/ria-sharma.jpg"
+                    alt="Ria Sharma"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  />
+                  <span class="tm-meta">
+                    <strong>Ria Sharma</strong>
+                    <small>Mumbai &middot; Pilgrimage &amp; Beaches</small>
+                  </span>
+                </footer>
+              </article>
+
+              <article class="tm-card" data-trip="Wildlife">
+                <i class="fa fa-quote-left tm-quote" aria-hidden="true"></i>
+                <div class="tm-stars" role="img" aria-label="5 out of 5 stars">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i>
+                </div>
+                <blockquote class="tm-text">
+                  We explored the breathtaking flora and fauna in Kaziranga, Jim
+                  Corbett and Sundarbans and were in awe of the wildlife with
+                  such an amazing experience. We were very happy with the
+                  services provided.
+                </blockquote>
+                <footer class="tm-author">
+                  <img
+                    class="tm-avatar"
+                    src="../assets/images/testimonials/biswanath-das.jpg"
+                    alt="Biswanath Das"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  />
+                  <span class="tm-meta">
+                    <strong>Biswanath Das</strong>
+                    <small>Kolkata &middot; Wildlife</small>
+                  </span>
+                </footer>
+              </article>
+
+              <article class="tm-card" data-trip="Hill Stations">
+                <i class="fa fa-quote-left tm-quote" aria-hidden="true"></i>
+                <div class="tm-stars" role="img" aria-label="5 out of 5 stars">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i>
+                </div>
+                <blockquote class="tm-text">
+                  We travelled to Delhi, Shimla, Manali, Darjeeling and
+                  Dalhousie. We experienced the snowfall in Kullu and Kufri. We
+                  were awestruck by the spellbinding beauty of Manali and also
+                  enjoyed horse riding there.
+                </blockquote>
+                <footer class="tm-author">
+                  <img
+                    class="tm-avatar"
+                    src="../assets/images/testimonials/suresh-kumar.jpg"
+                    alt="Suresh Kumar"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  />
+                  <span class="tm-meta">
+                    <strong>Suresh Kumar</strong>
+                    <small>Hyderabad &middot; Hill Stations</small>
+                  </span>
+                </footer>
+              </article>
+            </div>
+          </div>
+
+          <div class="tm-controls">
+            <button
+              type="button"
+              class="tm-arrow tm-prev"
+              aria-label="Previous testimonial"
+            >
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div
+              class="tm-dots"
+              role="tablist"
+              aria-label="Choose testimonial"
+            ></div>
+            <button
+              type="button"
+              class="tm-arrow tm-next"
+              aria-label="Next testimonial"
+            >
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100084496581520"
+            ><i class="fa fa-facebook"></i></a
+          ><a href="https://www.instagram.com/travel_milestogo/"
+            ><i class="fa fa-instagram"></i></a
+          ><a href="https://twitter.com/MilesToGo___"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="homepage.html">Home</a></li>
+          <li class="list-inline-item"><a href="#service">Services</a></li>
+          <li class="list-inline-item"><a href="aboutus.html">About</a></li>
+          <li class="list-inline-item">
+            <a href="../php/contactus.php">Contact</a>
+          </li>
+          <li class="list-inline-item"><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <p class="copyright">
+          Miles To Go! <i class="fa fa-copyright"></i> 2022
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="../assets/js/slider.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../assets/js/jquery.countTo.min.js"></script>
+    <script src="../assets/js/jquery.shuffle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

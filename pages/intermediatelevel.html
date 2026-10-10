@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>intermediate course</title>
+    <link rel="stylesheet" href="../assets/css/intermediatelevel.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"/>
+    </head>
+  <body> 
+
+    <section id="service">
+        <div class="service-box"> 
+        <div class="single-service">
+          <img src="../assets/images/mosque.jpg"/>
+          <div class="title-text"></div>
+          <div class="service-desc">
+            <h1>Manali Tour Package</h1>
+            <br>
+            <div class="boxed">
+              <i class="fa fa-calendar-o"></i>&nbsp; when is the date
+            </div>
+            <br>
+            <div class="boxed">
+              <i class="fa fa-clock-o"></i>&nbsp; Fri, Sat &nbsp; &nbsp; &nbsp; for how many days
+            </div>
+            <br>
+            <div class="boxed">
+              <i class="fa fa-map-marker"></i>&nbsp; &nbsp; hotel name
+            </div>
+            <br>
+            <p>Tour Package Itinerary</p>
+           <div class="text">
+             <br>
+             change the description
+           </div>
+            <br>
+            <p>More Details</p>
+            <div class="text">
+            <br>
+            change the description
+            </div>
+            <br>
+            <p>Amennities Provided</p>
+            <div class="text2">
+             <br>
+             &#8226; TT Equipments
+             <br>
+             &#8226; Sport Apparels
+            </div>
+            <br>
+            <p>Communication Language</p>
+            <div class="text2">
+            <br>
+            &#8226; English Hindi Kannada
+            </div>
+            <br>
+            <p>Safety Measures</p>
+            <div class="text1">
+              <br>
+              &#8226; Sanitize Hands
+              <br>
+              &#8226; Masks are must
+              <br>
+              &#8226; No Physical Contact
+              <br>
+              &#8226; Fully Vaccinated
+            </div>
+            <br>
+            <p><a href="https://app.tablebooking.co.uk/my_company_name">
+              <button style="font-size:15px;background-color:#eeeb2a; color:rgba(0, 0, 0, 0.87);padding:10px;border:none;  box-shadow: 0 2px 4px rgba(0, 0, 0, .6);">
+                ENROLL NOW</button></a></p>
+          </div>
+        </div>
+    </section>
+     
+
+    <script>
+      let menuBtn = document
+        .getElementById("menuBtn")
+        .addEventListener("click", function () {
+          if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+            menu.src = "images/close.png";
+          } else {
+            sideNav.style.right = "-250px";
+            menu.src = "images/menu.png";
+          }
+        });
+      let sideNav = document.getElementById("sideNav");
+      let menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+
+      let scroll = new SmothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+    </script>
+  </body>
+</html>

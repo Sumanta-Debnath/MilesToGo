@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miles To Go!</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      body {
+        background-color: #f6f6f6;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        top: 150px;
+      }
+      .brand-section {
+        background-color: #0d1033;
+        padding: 10px 40px;
+      }
+      .logo {
+        width: 50%;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .col-6 {
+        width: 50%;
+        flex: 0 0 auto;
+      }
+      .text-white {
+        color: #fff;
+        line-height: 23px;
+      }
+      .company-details {
+        float: right;
+        text-align: right;
+      }
+      .body-section {
+        padding: 16px;
+        border: 1px solid gray;
+      }
+      .heading {
+        font-size: 20px;
+        margin-bottom: 08px;
+      }
+      .sub-heading {
+        color: #262626;
+        margin-bottom: 05px;
+        font-size: 19px;
+        line-height: 25px;
+      }
+      table {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table thead tr {
+        border: 1px solid #111;
+        background-color: #f2f2f2;
+      }
+      table td {
+        vertical-align: middle !important;
+        text-align: center;
+      }
+      table th,
+      table td {
+        padding-top: 08px;
+        padding-bottom: 08px;
+      }
+      .table-bordered {
+        box-shadow: 0px 0px 5px 0.5px gray;
+      }
+      .table-bordered td,
+      .table-bordered th {
+        border: 1px solid #dee2e6;
+      }
+      .text-right {
+        text-align: end;
+      }
+      .w-20 {
+        width: 20%;
+      }
+      .float-right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand-section">
+        <div class="row">
+          <div class="col-6">
+            <div class="navbar-header">
+              <h2>
+                <a
+                  href="homepage.html"
+                  style="color: inherit; text-decoration: none"
+                  ><b>Miles To Go!</b></a
+                >
+              </h2>
+            </div>
+            <!-- /.navbar-header -->
+          </div>
+          <div class="col-6">
+            <div class="company-details">
+              <p
+                class="text-white"
+                style="position: relative; right: 15px; font-size: 19px"
+              >
+                Contact Us:
+              </p>
+              <p class="text-white">+91 7980459793</p>
+              <p class="text-white">+91 8697556495</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+        .navbar-header h2 {
+          font-family: "Macondo", cursive;
+          font-size: 40px;
+          color: white;
+          position: relative;
+        }
+      </style>
+
+      <div class="body-section">
+        <div class="row">
+          <div class="col-6">
+            <h2 class="heading">Invoice No.: 001</h2>
+            <p class="sub-heading">Booking Date: 23-08-2022</p>
+            <p class="sub-heading">Email Address: xyz@gmail.com</p>
+          </div>
+          <div class="col-6">
+            <p class="sub-heading">Full Name: Rahul Sharma</p>
+            <p class="sub-heading">Address: Andheri, Mumbai</p>
+            <p class="sub-heading">Phone Number: 9051900978</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-section">
+        <h3 class="heading">Ordered Items</h3>
+        <br />
+        <table class="table-bordered">
+          <thead>
+            <tr>
+              <th>Tour Package</th>
+              <th class="w-20">Cost (per head)</th>
+              <th class="w-20">Journey Date</th>
+              <th class="w-20">Grand Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Manali</td>
+              <td>12000</td>
+              <td>13-10-2022</td>
+              <td>12000</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="text-right">Sub Total</td>
+              <td>12000.XX</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="text-right">Tax Total 10%</td>
+              <td>1500</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="text-right">Grand Total</td>
+              <td>13500</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <h3 class="heading">Payment Status: Paid</h3>
+        <h3 class="heading">Payment Mode: Debit Card</h3>
+      </div>
+
+      <div class="body-section">
+        <p>&copy; Miles To Go! - 2022</p>
+      </div>
+    </div>
+
+    <div class="buttonback">
+      <a href="homepage.html"><input type="button" value="Back" /></a>
+    </div>
+    <style>
+      .buttonback {
+        height: 45px;
+        margin: 35px 0;
+      }
+      .buttonback input {
+        min-height: 44px;
+        min-width: 140px;
+        padding: 10px 24px;
+        position: relative;
+        top: 170px;
+        left: 850px;
+        border-radius: 10px;
+        border: 1px solid #1f2937;
+        color: #1f2937;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        transition:
+          background-color 0.2s ease,
+          color 0.2s ease,
+          box-shadow 0.2s ease,
+          transform 0.15s ease;
+        background: transparent;
+      }
+      .buttonback input:hover,
+      .buttonback input:focus {
+        color: #fff;
+        background: #1f2937;
+        box-shadow: 0 6px 16px rgba(31, 41, 55, 0.25);
+        transform: translateY(-1px);
+      }
+      .buttonback input:focus-visible {
+        outline: 3px solid rgba(20, 184, 166, 0.55);
+        outline-offset: 2px;
+      }
+    </style>
+  </body>
+</html>

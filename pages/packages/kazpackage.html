@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaziranga Tour Packages | Miles To Go!</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style1.css" rel="stylesheet" />
+    <link href="../../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../../assets/css/category.css" rel="stylesheet" />
+    <link href="../../assets/css/package.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <h2><a href="../homepage.html" style="color: inherit; text-decoration: none"><b>Miles To Go!</b></a></h2>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../homepage.html">Home</a></li>
+              <li><a href="../aboutus.html">About Us</a></li>
+              <li><a href="../../php/contactus.php">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Slideshow-->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="../../assets/images/yu.jpg" alt="Kaziranga Tour Packages" />
+        <div class="text">Kaziranga Tour Packages</div>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="../../assets/images/ui.jpg" alt="Kaziranga Tour Packages" />
+        <div class="text">Kaziranga Tour Packages</div>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="../../assets/images/nim.jpg" alt="Kaziranga Tour Packages" />
+        <div class="text">Kaziranga Tour Packages</div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    </script>
+
+    <section id="package" class="package">
+      <div class="package-card">
+        <img class="package-photo" src="../../assets/images/foll.jpg" alt="Kaziranga Tour Packages" />
+        <h1 class="package-title">Kaziranga Tour Packages</h1>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <i class="fa fa-calendar-o"></i>
+            <div><b>Journey Date</b><span>25/10/2022</span><span>14/01/2023</span></div>
+          </div>
+          <div class="info-box">
+            <i class="fa fa-clock-o"></i>
+            <div><b>2 Nights - 3 Days</b></div>
+          </div>
+          <div class="info-box">
+            <i class="fa fa-map-marker"></i>
+            <div><b>Hotel Name</b><span>Hotel Heritage Next</span></div>
+          </div>
+          <div class="info-box">
+            <i class="fa fa-rupee"></i>
+            <div><b>15000</b></div>
+          </div>
+        </div>
+
+        <h2 class="package-heading">Inclusions</h2>
+        <ul class="inclusions">
+          <li><i class="fa fa-building"></i>Accomodation</li>
+          <li><i class="fa fa-car"></i>Transport</li>
+          <li><i class="fa fa-spoon"></i>Meals</li>
+          <li><i class="fa fa-binoculars"></i>Sightseeing</li>
+        </ul>
+
+        <h2 class="package-heading">Travel Itinerary</h2>
+        <div class="itinerary">
+          <div class="day">
+            <h3>Day 1</h3>
+            <p>On arrival at Guwahati in the morning, you will be transfered to your pre-booked hotel in Kaziranga. In the afternoon post lunch, enjoy jeep safari in the Western Range (Bagori)/ Central Range (Kahora) of Kaziranga National Park. Evening: Free at relaxation. Overnight stay at the hotel.</p>
+          </div>
+          <div class="day">
+            <h3>Day 2</h3>
+            <p>In the early morning hours, enjoy an elephant safari at Central Range (Kohora)/ Western Range (Bagori) of Kaziranga National Park. In the late morning hours, visit Kaziranga Orchid Park to observe more than 500 varieties of wild orchids found all in North-East Indian states, 132 species of sour fruits and leafy vegetables, 12 species of cane, 46 species of bamboo and a wide variety of local fishes. Rest of the day visit the beautiful tea gardens bordering the Kaziranga National Park. Overnight stay at hotel.</p>
+          </div>
+          <div class="day">
+            <h3>Day 3</h3>
+            <p>Checkout from the hotel for your onward destination.</p>
+          </div>
+        </div>
+
+        <h2 class="package-heading">Hotel Amenities Provided</h2>
+        <ul class="amenities">
+          <li>Parking</li>
+          <li>Free WiFi</li>
+          <li>24-Hour Guest Reception</li>
+          <li>Complimentary Toiletries</li>
+          <li>Laundry Services</li>
+          <li>Flexible Checkout</li>
+        </ul>
+
+        <p class="package-book"><a class="btn-book" href="https://app.tablebooking.co.uk/my_company_name">BOOK NOW</a></p>
+      </div>
+    </section>
+
+    <div class="buttonback"><a href="../kaziranga.html">Back</a></div>
+
+    <!--Footer-->
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100084496581520"
+            ><i class="fa fa-facebook"></i></a
+          ><a href="https://www.instagram.com/travel_milestogo/"
+            ><i class="fa fa-instagram"></i></a
+          ><a href="https://twitter.com/MilesToGo___"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="../homepage.html">Home</a></li>
+          <li class="list-inline-item"><a href="#package">Services</a></li>
+          <li class="list-inline-item"><a href="../aboutus.html">About</a></li>
+          <li class="list-inline-item">
+            <a href="../../php/contactus.php">Contact</a>
+          </li>
+          <li class="list-inline-item"><a href="../faqs.html">FAQs</a></li>
+        </ul>
+        <p class="copyright">
+          Miles To Go! <i class="fa fa-copyright"></i> 2022
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>

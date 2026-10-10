@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chennai - Havelock Island | Miles To Go!</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style1.css" rel="stylesheet" />
+    <link href="../../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../../assets/css/category.css" rel="stylesheet" />
+    <link href="../../assets/css/plan.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <h2><a href="../homepage.html" style="color: inherit; text-decoration: none"><b>Miles To Go!</b></a></h2>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../homepage.html">Home</a></li>
+              <li><a href="../aboutus.html">About Us</a></li>
+              <li><a href="../../php/contactus.php">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="plan-page">
+      <video id="background-video" autoplay loop muted playsinline>
+        <source src="../../assets/videos/chennai-havelock.mp4" type="video/mp4" />
+        <source src="../../assets/videos/beach.mp4" type="video/mp4" />
+      </video>
+      <script>
+        // Skip downloading the background video on small screens (it is hidden there)
+        if (window.matchMedia("(max-width: 750px)").matches) {
+          document.getElementById("background-video").remove();
+        }
+      </script>
+
+      <div class="plan-layout">
+        <div class="plan-info">
+          <table class="plan-table">
+            <tbody>
+              <tr>
+                <th scope="row"><b>Distance</b></th>
+                <td>1490 KM</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Time (by Air)</b></th>
+                <td>2 hours</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Travel Fare (by Air)</b><span class="sub">Nearest Airport: Port Blair</span></th>
+                <td><span class="rupee">&#8377;</span>10000</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Time (by Sea)</b></th>
+                <td>81 hours approx.</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Travel Fare (by Sea)</b><span class="sub">Nearest Port: Port Blair</span></th>
+                <td><span class="rupee">&#8377;</span>4000</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Best Time to Visit</b></th>
+                <td>&#9658; October - May</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="plan-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7987271.432283844!2d82.13341112950602!3d12.178028625990413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!3m2!1d13.082680199999999!2d80.27071839999999!4m5!1s0x3088d212164bb773%3A0x9715637d9a7265b3!2sRadhanagar%20Beach%2C%20Andaman%20and%20Nicobar%20Islands!3m2!1d11.9844552!2d92.95084539999999!5e0!3m2!1sen!2sin!4v1661195913644!5m2!1sen!2sin"
+            title="Route map"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="plan-actions">
+        <a class="btn-plan" href="../packages/radhapackage.html">Book Tour Packages</a>
+        <a class="btn-plan btn-ghost" href="../radhanagar.html">Cancel</a>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>

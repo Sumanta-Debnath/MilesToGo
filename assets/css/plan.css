@@ -1,0 +1,185 @@
+/* Travel plan pages (pages/plans/*).
+   Load AFTER category.css, which provides the base reset, header, .btn-plan
+   and the .buttonback styles. */
+
+.plan-page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  padding: clamp(110px, 12vw, 150px) 15px clamp(40px, 6vw, 80px);
+  overflow: hidden;
+  color: #fff;
+  background: #0b1b2b;
+}
+.plan-page #background-video {
+  z-index: -2;
+}
+.plan-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 750px) {
+  .plan-page {
+    background: url("https://assets.codepen.io/6093409/river.jpg") center /
+      cover no-repeat;
+  }
+}
+
+.plan-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(20px, 3vw, 40px);
+  align-items: stretch;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.plan-info {
+  min-width: 0;
+}
+
+/* ---------- Details table ---------- */
+.plan-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #666b85;
+  font-size: 16px;
+}
+.plan-table th,
+.plan-table td {
+  padding: 16px 20px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 17px;
+  background: #fff;
+  border-top: 1px solid #c1c3d1;
+}
+.plan-table tr:first-child th,
+.plan-table tr:first-child td {
+  border-top: 0;
+}
+.plan-table tr:nth-child(odd) th,
+.plan-table tr:nth-child(odd) td {
+  background: #ebebeb;
+}
+.plan-table th {
+  width: 42%;
+  font-weight: 400;
+  border-right: 1px solid #c1c3d1;
+}
+.plan-table th b {
+  font-weight: 700;
+}
+.plan-table .sub {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.plan-table .rupee {
+  font-size: 20px;
+}
+.plan-table tr:hover th,
+.plan-table tr:hover td {
+  background: #4e5066;
+  color: #fff;
+}
+
+/* ---------- Map ---------- */
+.plan-map {
+  position: relative;
+  min-width: 0;
+  min-height: 320px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #e5e3df;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.plan-map iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------- Buttons ---------- */
+.plan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 20px;
+  width: 100%;
+  max-width: 1300px;
+  margin: clamp(24px, 4vw, 40px) auto 0;
+}
+.plan-actions .btn-plan {
+  text-align: center;
+}
+/* Outlined secondary button on the dark video background */
+.plan-page .btn-plan.btn-ghost {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.plan-page .btn-plan.btn-ghost:hover,
+.plan-page .btn-plan.btn-ghost:focus {
+  color: #111827;
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.plan-page .btn-plan.btn-ghost:active {
+  background: #e5e7eb;
+  border-color: #e5e7eb;
+}
+
+@media (max-width: 900px) {
+  .plan-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 640px;
+  }
+  .plan-actions {
+    max-width: 640px;
+  }
+  .plan-map {
+    height: clamp(300px, 90vw, 500px);
+  }
+}
+@media (max-width: 480px) {
+  .plan-table th,
+  .plan-table td {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-right: 0;
+  }
+  .plan-table th {
+    padding-bottom: 2px;
+  }
+  .plan-table td {
+    border-top: 0;
+    padding-top: 2px;
+  }
+  .plan-table tr {
+    display: block;
+    border-top: 1px solid #c1c3d1;
+  }
+  .plan-table tr:first-child {
+    border-top: 0;
+  }
+  .plan-actions .btn-plan {
+    flex: 1 1 100%;
+  }
+}

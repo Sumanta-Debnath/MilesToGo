@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Delhi - Darjeeling | Miles To Go!</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style1.css" rel="stylesheet" />
+    <link href="../../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../../assets/css/category.css" rel="stylesheet" />
+    <link href="../../assets/css/plan.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <h2><a href="../homepage.html" style="color: inherit; text-decoration: none"><b>Miles To Go!</b></a></h2>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../homepage.html">Home</a></li>
+              <li><a href="../aboutus.html">About Us</a></li>
+              <li><a href="../../php/contactus.php">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="plan-page">
+      <video id="background-video" autoplay loop muted playsinline>
+        <source src="../../assets/videos/d99.mp4" type="video/mp4" />
+        <source src="../../assets/videos/hill%20station.mp4" type="video/mp4" />
+      </video>
+      <script>
+        // Skip downloading the background video on small screens (it is hidden there)
+        if (window.matchMedia("(max-width: 750px)").matches) {
+          document.getElementById("background-video").remove();
+        }
+      </script>
+
+      <div class="plan-layout">
+        <div class="plan-info">
+          <table class="plan-table">
+            <tbody>
+              <tr>
+                <th scope="row"><b>Distance</b></th>
+                <td>1500 KM</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Time</b></th>
+                <td>26 - 28 hours approx.</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Travel Fare (by Road)</b></th>
+                <td><span class="rupee">&#8377;</span>3000</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Travel Fare (by Train)</b><span class="sub">Nearest Railway Station: New Jalpaiguri</span></th>
+                <td><span class="rupee">&#8377;</span>3500</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Travel Fare (by Air)</b><span class="sub">Nearest Airport: Bagdogra</span></th>
+                <td><span class="rupee">&#8377;</span>7000</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Stopovers</b></th>
+                <td>&#9642; Agra<br>&#9642; Kanpur<br>&#9642; Lucknow<br>&#9642; Gorakhpur<br>&#9642; Motihari<br>&#9642; Darbhanga<br>&#9642; Siliguri<br>&#9642; Kurseong<br>&#9642; Kalimpong</td>
+              </tr>
+              <tr>
+                <th scope="row"><b>Best Time to Visit</b></th>
+                <td>&#9658; April - June</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="plan-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7291853.614871805!2d78.33531330357914!3d26.82482775561258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!3m2!1d28.6139391!2d77.2090212!4m5!1s0x39e42e654cf501bb%3A0x4175555979d4702a!2sDarjeeling%2C%20West%20Bengal!3m2!1d27.0410218!2d88.2662745!5e0!3m2!1sen!2sin!4v1661004504237!5m2!1sen!2sin"
+            title="Route map"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="plan-actions">
+        <a class="btn-plan" href="../packages/darjpackage.html">Book Tour Packages</a>
+        <a class="btn-plan btn-ghost" href="../darjeeling.html">Cancel</a>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>

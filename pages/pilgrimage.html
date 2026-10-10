@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pilgrimages | Miles To Go!</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/style1.css" rel="stylesheet" />
+    <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link href="../assets/css/category.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body class="footer-dark">
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <h2><a href="homepage.html" style="color: inherit; text-decoration: none"><b>Miles To Go!</b></a></h2>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="../php/contactus.php">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Slideshow-->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="../assets/images/boo.jpg" alt="Pilgrimages" />
+        <div class="text">Pilgrimages</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="../assets/images/qu.jpg" alt="Pilgrimages" />
+        <div class="text">Pilgrimages</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="../assets/images/pill.jpg" alt="Pilgrimages" />
+        <div class="text">Pilgrimages</div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    </script>
+
+    <!--Section Box-->
+    <section id="service">
+      <video id="background-video" autoplay loop muted playsinline>
+        <source src="../assets/videos/Lighted%20Candles.mp4" type="video/mp4" />
+      </video>
+      <script>
+        // Skip downloading the background video on small screens (it is hidden there)
+        if (window.matchMedia("(max-width: 750px)").matches) {
+          document.getElementById("background-video").remove();
+        }
+      </script>
+
+      <div class="service-box">
+        <div class="single-service">
+          <img
+            src="../assets/images/pexels-dharamveer-7152003.jpg"
+            alt="Vaishno Devi"
+          />
+          <div class="text-block">
+            <h4>Vaishno Devi</h4>
+            <h5>Jammu &amp; Kashmir</h5>
+            <a class="btn-plan" href="vaishnodevi.html">Tour Plan</a>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="../assets/images/pexels-nav-.jpg" alt="Amritsar" />
+          <div class="text-block">
+            <h4>Amritsar</h4>
+            <h5>Punjab</h5>
+            <a class="btn-plan" href="amritsar.html">Tour Plan</a>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="../assets/images/vara.jpg" alt="Varanasi" />
+          <div class="text-block">
+            <h4>Varanasi</h4>
+            <h5>Uttar Pradesh</h5>
+            <a class="btn-plan" href="varanasi.html">Tour Plan</a>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="../assets/images/pexels.jpg" alt="Rameswaram" />
+          <div class="text-block">
+            <h4>Rameswaram</h4>
+            <h5>Tamil Nadu</h5>
+            <a class="btn-plan" href="rameshwaram.html">Tour Plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="buttonback"><a href="homepage.html">Back</a></div>
+
+    <!--Footer-->
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100084496581520"
+            ><i class="fa fa-facebook"></i></a
+          ><a href="https://www.instagram.com/travel_milestogo/"
+            ><i class="fa fa-instagram"></i></a
+          ><a href="https://twitter.com/MilesToGo___"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="homepage.html">Home</a></li>
+          <li class="list-inline-item"><a href="#service">Services</a></li>
+          <li class="list-inline-item"><a href="aboutus.html">About</a></li>
+          <li class="list-inline-item">
+            <a href="../php/contactus.php">Contact</a>
+          </li>
+          <li class="list-inline-item"><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <p class="copyright">
+          Miles To Go! <i class="fa fa-copyright"></i> 2022
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
